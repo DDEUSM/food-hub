@@ -1,0 +1,33 @@
+networks:
+  db-net:
+    driver: bridge
+
+services:
+
+  pgsql:
+    build: 
+      context: .
+    container_name: "pgsql"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: pizzaria
+    ports:
+      - 5432:5432
+    networks:
+      - db-net
+
+  pg-admin:
+    image: dpage/pgadmin4
+    container_name: pg-admin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: david@live.com
+      PGADMIN_DEFAULT_PASSWORD: 1234
+    ports:
+      - 1123:80
+    depends_on:
+      - pgsql
+    links:
+      - pgsql
+    networks:
+      - db-net

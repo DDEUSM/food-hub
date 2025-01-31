@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "rootDir": "./src",
+      "outDir": "./dist/src/",
+      "target": "ES2022",                                
+      "lib": ["ES2023", "ES6"], 
+      "types": ["reflect-metadata", "jest"],    
+      "module": "CommonJS",
+      "moduleResolution": "Node",
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,                                    
+      "esModuleInterop": true,                             
+      "forceConsistentCasingInFileNames": true,            
+      "strict": true,   
+      "resolveJsonModule": true                                
+    },
+    "exclude": ["./jest.config.js", "**/*.spec.ts", "./dist", "./__tests__"]
+  }
+  
