@@ -1,0 +1,20 @@
+import { PizzaSizes } from "../../enums/pizzaSizes"
+
+export interface OrderItemInput { 
+    orderItemId: number,   
+    itemId: string,
+    size?: PizzaSizes
+    price: number    
+}
+
+
+export class ItemOrder {
+
+    id: string
+    items: Array<OrderItemInput>
+
+    constructor(id: string, items: Array<OrderItemInput>){
+        this.id = id
+        this.items = items
+    }
+}

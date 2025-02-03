@@ -1,0 +1,102 @@
+import { z } from "zod";
+import { PizzaSizes } from "../../enums/pizzaSizes";
+import { RecordStatus } from "../../enums/recordStatus";
+import { UnitTypes } from "../../enums/unitTypes";
+
+export const ItemRequirementsInputSchema = z.object({
+    resourceId: z.string().length(26),
+    quantityRequired: z.number()
+})
+
+export interface ItemRequirementsInput {
+    resourceId: string;
+    quantityRequired: number;
+}
+
+
+export const ItemFlavorInputSchema = z.object({    
+    flavor: z.string().min(2).max(70),
+    sizes: z.array(z.number()).min(1).max(4),
+    currentPrice: z.number().min(30),
+    pizzaRequirements: z.array(ItemRequirementsInputSchema),
+    createdBy: z.string().min(2).max(70)
+})
+
+export interface ItemFlavorInput {
+    flavor: string;
+    sizes: number[];
+    currentPrice: number;
+    pizzaRequirements: ItemRequirementsInput[];
+    createdBy: string;
+}
+
+
+export const ItemRequirementsOutputSchema = z.object({
+    id: z.string().length(26),
+    pizzaId: z.string().length(26),
+    resourceId: z.string().length(26),
+    quantityRequired: z.number(),
+    unitId: z.nativeEnum(UnitTypes),
+    editedAt: z.string().nullable(),
+    editedBy: z.string().length(26).nullable(),
+    createdAt: z.string(),
+    createdBy: z.string().length(26)
+})
+
+export interface ItemRequirementsOutput {
+    id: string;
+    pizzaId: string;
+    resourceId: string;
+    quantityRequired: number;
+    unitId: UnitTypes;
+    editedAt: string | null;
+    editedBy: string | null;
+    createdAt: string;
+    createdBy: string;
+}
+
+
+export const ItemFlavorOutputSchema = z.object({   
+    id: z.string().length(26), 
+    flavor: z.string().min(2).max(70),
+    sizes: z.array(z.number()).min(1).max(4),
+    currentPrice: z.number().min(30),
+    pizzaRequirements: z.array(ItemRequirementsOutputSchema).optional(),
+    recordStatusId: z.nativeEnum(RecordStatus),
+    createdAt: z.string(),
+    editedAt: z.string().nullable(),
+    editedBy: z.string().length(26).nullable(),
+    createdBy: z.string().min(2).max(70)
+})
+
+export interface ItemFlavorOutput {
+    id: string;
+    flavor: string;
+    sizes: number[];
+    currentPrice: number;
+    pizzaRequirements?: ItemRequirementsOutput[];
+    recordStatusId: RecordStatus;
+    createdAt: string;
+    editedAt: string | null;
+    editedBy: string | null;
+    createdBy: string;
+}
+
+
+export const ItemOrderInputSchema = z.object({
+    items: z.array(z.object({
+        itemId: z.string().min(1).transform(value => Number(value)),
+        pizzaId: z.string().length(26),
+        size: z.nativeEnum(PizzaSizes),
+    }))
+})
+
+export interface ItemOrderItemInput {
+    itemId: number;
+    pizzaId: string;
+    size: PizzaSizes;
+}
+
+export interface ItemOrderInput {
+    items: ItemOrderItemInput[];
+}

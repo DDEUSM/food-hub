@@ -1,0 +1,43 @@
+import { inject } from "inversify";
+import 'reflect-metadata';
+import { Body, Controller, Get, Path, Post, Response, Route } from "tsoa";
+import { provideSingleton } from "../../ioc/provideSingleton";
+import { ItemFlavorInputSchema, ItemFlavorOutput, ItemOrderInput, ItemOrderInputSchema } from "./pizza.dto";
+import { PizzaFlavorInput } from "./pizza.entity";
+import { ItemServices } from "./pizza.services";
+import { ItemOrder } from "./pizzaOrder.entity";
+
+@Route("items")
+@provideSingleton("ItemsController")
+export class ItemsController extends Controller {
+
+    constructor(        
+        @inject(ItemServices) private services: ItemServices
+    ){ super(); }
+
+    @Response<ItemFlavorOutput>(201)
+    @Post()
+    async create(@Body() body: PizzaFlavorInput) {
+        const dto = ItemFlavorInputSchema.parse(body);
+        const newPizzaFlavor = await this.services.registerItemFlavor(dto);
+        this.setStatus(201);
+        return newPizzaFlavor;
+    }
+
+
+    @Response<ItemOrder>(200)
+    @Post("/comprar/{id}")
+    async order(@Path() id: string, @Body() body: ItemOrderInput) {
+        const dto = ItemOrderInputSchema.parse(body);
+        const result = await this.services.itemOrder(dto);
+        return result;
+    }
+
+
+    @Response<ItemFlavorOutput>(200)
+    @Get("{id}")
+    async itemById(@Path() id: string) {
+        const result = await this.services.getItemById(id);
+        return result;
+    }
+}

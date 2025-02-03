@@ -8,78 +8,44 @@ datasource db {
 }
 
 model currency_types {
-  id        Int         @id
-  name      String?     @db.VarChar(10)
-  symbol    String?     @db.VarChar(5)
-  pizzas    pizzas[]
-  resources resources[]
-}
-
-model pizza_requirements {
-  id                String      @id @db.Char(26)
-  pizza_id          String?     @db.Char(26)
-  resource_id       String?     @db.Char(26)
-  quantity_required Decimal?    @db.Decimal(10, 2)
-  unit_id           Int?
-  edited_at         DateTime?   @db.Timestamp(6)
-  edited_by         String?     @db.Char(26)
-  created_at        DateTime?   @db.Timestamp(6)
-  created_by        String?     @db.Char(26)
-  pizzas            pizzas?     @relation(fields: [pizza_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "pizza_reqs_flavor")
-  resources         resources?  @relation(fields: [resource_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "pizza_reqs_ingredient")
-  unit_types        unit_types? @relation(fields: [unit_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "pizza_reqs_unit")
-}
-
-model pizzas {
-  id                 String               @id @db.Char(26)
-  flavor             String?              @unique @db.VarChar(70)
-  current_price      Decimal?             @db.Decimal(10, 2)
-  currency_id        Int?
-  record_status_id   Int?
-  sizes              Int[]
-  created_at         DateTime?            @db.Timestamp(6)
-  created_by         String?              @db.Char(26)
-  edited_at          DateTime?            @db.Timestamp(6)
-  edited_by          String?              @db.Char(26)
-  pizza_requirements pizza_requirements[]
-  currency_types     currency_types?      @relation(fields: [currency_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "pizza_currency")
-  record_status      record_status?       @relation(fields: [record_status_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "pizza_record_status")
+  id     Int     @id
+  name   String? @db.VarChar(10)
+  symbol String? @db.VarChar(5)
 }
 
 model record_status {
-  id     Int      @id
-  name   String?  @db.VarChar(15)
-  pizzas pizzas[]
+  id       Int        @id
+  name     String?    @db.VarChar(15)
+  products products[]
 }
 
 model resources {
-  id                    String               @id @db.Char(26)
-  name                  String?              @unique @db.VarChar(70)
-  quantity              Decimal?             @db.Decimal(10, 2)
-  average_cost_per_unit Decimal?             @db.Decimal(10, 2)
-  currency_id           Int?
-  unit_id               Int?
-  last_entry_at         DateTime?            @db.Timestamp(6)
-  pizza_requirements    pizza_requirements[]
-  currency_types        currency_types?      @relation(fields: [currency_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "resources_currency")
-  unit_types            unit_types?          @relation(fields: [unit_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "resources_unit")
+  id                               String                             @id @db.Char(26)
+  name                             String                             @db.VarChar(70)
+  quantity                         Float
+  average_cost_per_unit            Decimal                            @db.Decimal(10, 2)
+  unit_id                          Int
+  last_entry_at                    DateTime?                          @db.Timestamp(6)
+  complement_resource_requirements complement_resource_requirements[]
+  product_resource_requirements    product_resource_requirements[]
+  unit_types                       unit_types                         @relation(fields: [unit_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "resources_unit")
 }
 
 model sizes_coeficient {
   id         Int       @id
-  value      Decimal?  @db.Decimal(10, 2)
-  edtied_at  DateTime? @db.Timestamp(6)
+  value      Float?
+  edited_at  DateTime? @db.Timestamp(6)
   edited_by  String?   @db.Char(26)
   created_at DateTime? @db.Timestamp(6)
   created_by String?   @db.Char(26)
 }
 
 model unit_types {
-  id                 Int                  @id
-  name               String?              @db.VarChar(15)
-  symbol             String?              @db.VarChar(3)
-  pizza_requirements pizza_requirements[]
-  resources          resources[]
+  id                            Int                             @id
+  name                          String?                         @db.VarChar(15)
+  symbol                        String?                         @db.VarChar(3)
+  product_resource_requirements product_resource_requirements[]
+  resources                     resources[]
 }
 
 model users {
@@ -88,4 +54,130 @@ model users {
   email      String    @unique @db.VarChar(75)
   created_at DateTime  @db.Timestamp(6)
   edited_at  DateTime? @db.Timestamp(6)
+}
+
+model complement_categories {
+  id          String        @id @db.Char(26)
+  name        String        @db.VarChar(70)
+  complements complements[]
+}
+
+model complement_products {
+  id            String      @id @db.Char(26)
+  product_id    String      @db.Char(26)
+  complement_id String      @db.Char(26)
+  obrigatory    Boolean
+  complements   complements @relation(fields: [complement_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "complement_products_complement_rel")
+  products      products    @relation(fields: [product_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "products_products_complement_rel")
+}
+
+model complements {
+  id                               String                             @id @db.Char(26)
+  category_id                      String                             @db.Char(26)
+  name                             String                             @db.VarChar(70)
+  image_url                        String?                            @db.VarChar(100)
+  current_price                    Decimal                            @db.Decimal(10, 2)
+  complement_products              complement_products[]
+  complement_resource_requirements complement_resource_requirements[]
+  complement_categories            complement_categories              @relation(fields: [category_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "complement_categories_rel")
+}
+
+model customers {
+  id         String   @id @db.Char(26)
+  name       String   @db.VarChar(70)
+  phone      BigInt?
+  email      String?  @db.VarChar(70)
+  address    String?
+  created_at DateTime @db.Timestamp(6)
+  orders     orders[]
+}
+
+model order_products {
+  id            String   @id @db.Char(26)
+  item_group_id Int
+  product_id    String   @db.Char(26)
+  order_id      String   @db.Char(26)
+  products      products @relation(fields: [product_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "item_and_order_products_rel")
+  orders        orders   @relation(fields: [order_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "order_and_order_products_rel")
+}
+
+model orders {
+  id             String           @id @db.Char(26)
+  customer_id    String?          @db.Char(26)
+  payment_id     String?          @db.Char(26)
+  created_at     DateTime         @db.Timestamp(6)
+  order_products order_products[]
+  customers      customers?       @relation(fields: [customer_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "orders_and_customer_rel")
+  payment        payment?         @relation(fields: [payment_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "orders_and_payment_rel")
+}
+
+model payment {
+  id                 String          @id @db.Char(26)
+  payment_method_id  Int
+  installments_value Int
+  installments_count Int
+  installment_diff   Int
+  transaction_id     String?         @db.VarChar(60)
+  paid_at            DateTime?       @db.Timestamp(6)
+  orders             orders[]
+  payment_methods    payment_methods @relation(fields: [payment_method_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "payment_and_payment_methods_rel")
+}
+
+model payment_methods {
+  id               Int       @id @default(autoincrement())
+  name             String    @db.VarChar(50)
+  max_installments Int
+  payment          payment[]
+}
+
+model product_categories {
+  id             String     @id @db.Char(26)
+  name           String     @db.VarChar(70)
+  products_count Int
+  created_at     DateTime   @db.Timestamp(6)
+  products       products[]
+}
+
+model products {
+  id                            String                          @id @db.Char(26)
+  category_id                   String                          @db.Char(26)
+  name                          String                          @db.VarChar(70)
+  image_url                     String?                         @db.VarChar(100)
+  description                   String?
+  current_price                 Decimal                         @db.Decimal(10, 2)
+  record_status_id              Int
+  sizes                         Int[]
+  created_at                    DateTime                        @db.Timestamp(6)
+  created_by                    String                          @db.Char(26)
+  edited_at                     DateTime?                       @db.Timestamp(6)
+  edited_by                     String?                         @db.Char(26)
+  complement_products           complement_products[]
+  order_products                order_products[]
+  product_resource_requirements product_resource_requirements[]
+  record_status                 record_status                   @relation(fields: [record_status_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "item_record_status")
+  product_categories            product_categories              @relation(fields: [category_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "product_categories_rel")
+}
+
+model complement_resource_requirements {
+  id                String      @id @db.Char(26)
+  complement_id     String      @db.Char(26)
+  resource_id       String      @db.Char(26)
+  quantity_required Float
+  complements       complements @relation(fields: [complement_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "complement_resource_requirements_complements_rel")
+  resources         resources   @relation(fields: [resource_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "complement_resource_requirements_resources_rel")
+}
+
+model product_resource_requirements {
+  id                String     @id @db.Char(26)
+  product_id        String     @db.Char(26)
+  resource_id       String     @db.Char(26)
+  quantity_required Float
+  unit_id           Int
+  created_at        DateTime   @db.Timestamp(6)
+  created_by        String     @db.Char(26)
+  edited_at         DateTime?  @db.Timestamp(6)
+  edited_by         String?    @db.Char(26)
+  products          products   @relation(fields: [product_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "item_reqs_flavor")
+  resources         resources  @relation(fields: [resource_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "item_reqs_ingredient")
+  unit_types        unit_types @relation(fields: [unit_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "item_reqs_unit")
 }

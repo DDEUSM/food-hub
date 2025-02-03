@@ -1,0 +1,24 @@
+{
+    "entryFile": "src/main.ts",
+    "noImplicitAdditionalProperties": "throw-on-extras",
+    "controllerPathGlobs": ["src/**/*.controller.ts"],
+    "spec": {
+        "securityDefinitions": {
+            "JWT": {
+                "type": "apiKey",                                
+                "name": "Authorization",
+                "in": "header"
+            }
+        },
+        "outputDirectory": "src/routes.config",
+        "specVersion": 3,
+        "servers": [
+            "localhost:3122"
+        ]       
+    },
+    "routes": {
+        "routesDir": "src/routes.config",
+        "iocModule": "src/ioc/ioc.ts",
+        "authenticationModule": "./src/middlewares/authorization.ts"
+    }
+}

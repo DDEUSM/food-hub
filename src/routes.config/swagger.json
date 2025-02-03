@@ -1,0 +1,360 @@
+{
+	"openapi": "3.0.0",
+	"components": {
+		"examples": {},
+		"headers": {},
+		"parameters": {},
+		"requestBodies": {},
+		"responses": {},
+		"schemas": {
+			"ProductCategory": {
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"createdAt": {
+						"type": "string",
+						"format": "date-time"
+					}
+				},
+				"required": [
+					"id",
+					"name",
+					"createdAt"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"ProductCategoryCreate": {
+				"properties": {
+					"name": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"name"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"Product": {
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"categoryId": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"imageUrl": {
+						"type": "string"
+					},
+					"description": {
+						"type": "string"
+					},
+					"currentPrice": {
+						"type": "number",
+						"format": "double"
+					},
+					"recordStatusId": {
+						"type": "number",
+						"format": "double"
+					},
+					"sizes": {
+						"items": {
+							"type": "number",
+							"format": "double"
+						},
+						"type": "array"
+					},
+					"createdBy": {
+						"type": "string"
+					},
+					"createdAt": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"editedAt": {
+						"type": "string",
+						"format": "date-time",
+						"nullable": true
+					},
+					"editedBy": {
+						"type": "string",
+						"nullable": true
+					}
+				},
+				"required": [
+					"id",
+					"categoryId",
+					"name",
+					"imageUrl",
+					"description",
+					"currentPrice",
+					"recordStatusId",
+					"sizes",
+					"createdBy",
+					"createdAt"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"ProductCreate": {
+				"properties": {
+					"categoryId": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"imageUrl": {
+						"type": "string"
+					},
+					"description": {
+						"type": "string"
+					},
+					"currentPrice": {
+						"type": "number",
+						"format": "double"
+					},
+					"recordStatusId": {
+						"type": "number",
+						"format": "double"
+					},
+					"sizes": {
+						"items": {
+							"type": "number",
+							"format": "double"
+						},
+						"type": "array"
+					},
+					"createdBy": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"categoryId",
+					"name",
+					"imageUrl",
+					"description",
+					"currentPrice",
+					"recordStatusId",
+					"sizes",
+					"createdBy"
+				],
+				"type": "object",
+				"additionalProperties": false
+			}
+		},
+		"securitySchemes": {
+			"JWT": {
+				"type": "apiKey",
+				"name": "Authorization",
+				"in": "header"
+			}
+		}
+	},
+	"info": {
+		"title": "pizzaria-app",
+		"version": "1.0.0",
+		"license": {
+			"name": "ISC"
+		},
+		"contact": {
+			"name": "daviddeusmesquita@gmail.com"
+		}
+	},
+	"paths": {
+		"/product-categories": {
+			"post": {
+				"operationId": "Create",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/ProductCategory"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/ProductCategoryCreate"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/product-categories/{id}": {
+			"get": {
+				"operationId": "GetById",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/ProductCategory"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "id",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			}
+		},
+		"/products": {
+			"post": {
+				"operationId": "Create",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/Product"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/ProductCreate"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/products/category/{categoryId}": {
+			"get": {
+				"operationId": "GetByCategory",
+				"responses": {
+					"204": {
+						"description": "No content"
+					}
+				},
+				"security": [],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "categoryId",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			}
+		},
+		"/products/{id}": {
+			"get": {
+				"operationId": "GetById",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/Product"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "id",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			},
+			"delete": {
+				"operationId": "DeleteById",
+				"responses": {
+					"204": {
+						"description": "No content"
+					}
+				},
+				"security": [],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "id",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			},
+			"put": {
+				"operationId": "Update",
+				"responses": {
+					"204": {
+						"description": "No content"
+					}
+				},
+				"security": [],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "id",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {}
+						}
+					}
+				}
+			}
+		}
+	},
+	"servers": [
+		{
+			"url": "https://localhost:3122/"
+		}
+	]
+}

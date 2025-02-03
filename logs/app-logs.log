@@ -1,0 +1,2338 @@
+{
+ "level": "error",
+ "logId": "5bef102befdd20456acf134e720e1927",
+ "timestamp": "2025-02-02T06:08:43.361Z",
+ "appInfo": {
+  "processId": 97319
+ },
+ "message": "No matching bindings found for serviceIdentifier: ProductCategoryController\nRegistered bindings:\n ProductCategoryController",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "18"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories",
+   "method": "POST",
+   "body": {
+    "name": "Bebidas"
+   },
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "text/html; charset=utf-8",
+    "content-length": "123",
+    "etag": "W/\"7b-okueKVEQ0Ge3DlhG/N2z/wWoWuw\""
+   },
+   "statusCode": 500,
+   "requestDuration": "0.004s",
+   "clienteDesistiu": false,
+   "error": {
+    "message": "No matching bindings found for serviceIdentifier: ProductCategoryControllerundefinedRegistered bindings:undefined ProductCategoryController",
+    "stack": "Error: No matching bindings found for serviceIdentifier: ProductCategoryControllerundefinedRegistered bindings:undefined ProductCategoryControllerundefined    at _validateActiveBindingCount (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:170:15)undefined    at _getActiveBindings (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:108:3)undefined    at _createSubRequests (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:205:22)undefined    at plan (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:339:5)undefined    at <anonymous> (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1084:45)undefined    at Container._get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1006:37)undefined    at Container._getButThrowIfAsync (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1010:60)undefined    at Container.get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:399:17)undefined    at ProductCategoryController_create (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/src/routes.config/routes.ts:72:57)undefined    at Layer.handle [as handle_request] (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/express/lib/router/layer.js:95:5)"
+   }
+  }
+ }
+}
+{
+ "level": "error",
+ "logId": "e92d37e0b4c7e8d87a6e341c09ab359b",
+ "timestamp": "2025-02-02T06:08:43.376Z",
+ "appInfo": {
+  "processId": 97319
+ },
+ "message": "No matching bindings found for serviceIdentifier: ProductCategoryController\nRegistered bindings:\n ProductCategoryController",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories/undefined",
+   "method": "GET",
+   "body": {},
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "text/html; charset=utf-8",
+    "content-length": "123",
+    "etag": "W/\"7b-okueKVEQ0Ge3DlhG/N2z/wWoWuw\""
+   },
+   "statusCode": 500,
+   "requestDuration": "0.003s",
+   "clienteDesistiu": false,
+   "error": {
+    "message": "No matching bindings found for serviceIdentifier: ProductCategoryControllerundefinedRegistered bindings:undefined ProductCategoryController",
+    "stack": "Error: No matching bindings found for serviceIdentifier: ProductCategoryControllerundefinedRegistered bindings:undefined ProductCategoryControllerundefined    at _validateActiveBindingCount (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:170:15)undefined    at _getActiveBindings (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:108:3)undefined    at _createSubRequests (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:205:22)undefined    at plan (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:339:5)undefined    at <anonymous> (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1084:45)undefined    at Container._get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1006:37)undefined    at Container._getButThrowIfAsync (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1010:60)undefined    at Container.get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:399:17)undefined    at ProductCategoryController_getById (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/src/routes.config/routes.ts:107:57)undefined    at Layer.handle [as handle_request] (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/express/lib/router/layer.js:95:5)"
+   }
+  }
+ }
+}
+{
+ "level": "error",
+ "logId": "8ba49c505e23ee5d4125f81e2a80a0be",
+ "timestamp": "2025-02-02T06:08:43.381Z",
+ "appInfo": {
+  "processId": 97319
+ },
+ "message": "No matching bindings found for serviceIdentifier: ProductCategoryController\nRegistered bindings:\n ProductCategoryController",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories/01JK2MD3VJFF24WRZWMS3F5QKB",
+   "method": "GET",
+   "body": {},
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "text/html; charset=utf-8",
+    "content-length": "123",
+    "etag": "W/\"7b-okueKVEQ0Ge3DlhG/N2z/wWoWuw\""
+   },
+   "statusCode": 500,
+   "requestDuration": "0.001s",
+   "clienteDesistiu": false,
+   "error": {
+    "message": "No matching bindings found for serviceIdentifier: ProductCategoryControllerundefinedRegistered bindings:undefined ProductCategoryController",
+    "stack": "Error: No matching bindings found for serviceIdentifier: ProductCategoryControllerundefinedRegistered bindings:undefined ProductCategoryControllerundefined    at _validateActiveBindingCount (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:170:15)undefined    at _getActiveBindings (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:108:3)undefined    at _createSubRequests (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:205:22)undefined    at plan (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:339:5)undefined    at <anonymous> (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1084:45)undefined    at Container._get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1006:37)undefined    at Container._getButThrowIfAsync (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1010:60)undefined    at Container.get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:399:17)undefined    at ProductCategoryController_getById (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/src/routes.config/routes.ts:107:57)undefined    at Layer.handle [as handle_request] (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/express/lib/router/layer.js:95:5)"
+   }
+  }
+ }
+}
+{
+ "level": "error",
+ "logId": "e98d4a8be1d316edfa4dc2f09e428b27",
+ "timestamp": "2025-02-02T06:08:52.803Z",
+ "appInfo": {
+  "processId": 97319
+ },
+ "message": "No matching bindings found for serviceIdentifier: ProductCategoryController\nRegistered bindings:\n ProductCategoryController",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "18"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories",
+   "method": "POST",
+   "body": {
+    "name": "Bebidas"
+   },
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "text/html; charset=utf-8",
+    "content-length": "123",
+    "etag": "W/\"7b-okueKVEQ0Ge3DlhG/N2z/wWoWuw\""
+   },
+   "statusCode": 500,
+   "requestDuration": "0.001s",
+   "clienteDesistiu": false,
+   "error": {
+    "message": "No matching bindings found for serviceIdentifier: ProductCategoryControllerundefinedRegistered bindings:undefined ProductCategoryController",
+    "stack": "Error: No matching bindings found for serviceIdentifier: ProductCategoryControllerundefinedRegistered bindings:undefined ProductCategoryControllerundefined    at _validateActiveBindingCount (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:170:15)undefined    at _getActiveBindings (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:108:3)undefined    at _createSubRequests (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:205:22)undefined    at plan (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:339:5)undefined    at <anonymous> (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1084:45)undefined    at Container._get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1006:37)undefined    at Container._getButThrowIfAsync (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1010:60)undefined    at Container.get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:399:17)undefined    at ProductCategoryController_create (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/src/routes.config/routes.ts:72:57)undefined    at Layer.handle [as handle_request] (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/express/lib/router/layer.js:95:5)"
+   }
+  }
+ }
+}
+{
+ "level": "error",
+ "logId": "18d9d80b189a243a0ed4f43f9d3c68e0",
+ "timestamp": "2025-02-02T06:08:52.823Z",
+ "appInfo": {
+  "processId": 97319
+ },
+ "message": "No matching bindings found for serviceIdentifier: ProductCategoryController\nRegistered bindings:\n ProductCategoryController",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories/undefined",
+   "method": "GET",
+   "body": {},
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "text/html; charset=utf-8",
+    "content-length": "123",
+    "etag": "W/\"7b-okueKVEQ0Ge3DlhG/N2z/wWoWuw\""
+   },
+   "statusCode": 500,
+   "requestDuration": "0.001s",
+   "clienteDesistiu": false,
+   "error": {
+    "message": "No matching bindings found for serviceIdentifier: ProductCategoryControllerundefinedRegistered bindings:undefined ProductCategoryController",
+    "stack": "Error: No matching bindings found for serviceIdentifier: ProductCategoryControllerundefinedRegistered bindings:undefined ProductCategoryControllerundefined    at _validateActiveBindingCount (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:170:15)undefined    at _getActiveBindings (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:108:3)undefined    at _createSubRequests (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:205:22)undefined    at plan (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:339:5)undefined    at <anonymous> (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1084:45)undefined    at Container._get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1006:37)undefined    at Container._getButThrowIfAsync (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1010:60)undefined    at Container.get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:399:17)undefined    at ProductCategoryController_getById (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/src/routes.config/routes.ts:107:57)undefined    at Layer.handle [as handle_request] (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/express/lib/router/layer.js:95:5)"
+   }
+  }
+ }
+}
+{
+ "level": "error",
+ "logId": "93cadfacbc6a12e33c4f2379fa6db84e",
+ "timestamp": "2025-02-02T06:08:52.828Z",
+ "appInfo": {
+  "processId": 97319
+ },
+ "message": "No matching bindings found for serviceIdentifier: ProductCategoryController\nRegistered bindings:\n ProductCategoryController",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories/01JK2MDD2S5ZPEGQPQ60N6CZX3",
+   "method": "GET",
+   "body": {},
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "text/html; charset=utf-8",
+    "content-length": "123",
+    "etag": "W/\"7b-okueKVEQ0Ge3DlhG/N2z/wWoWuw\""
+   },
+   "statusCode": 500,
+   "requestDuration": "0.001s",
+   "clienteDesistiu": false,
+   "error": {
+    "message": "No matching bindings found for serviceIdentifier: ProductCategoryControllerundefinedRegistered bindings:undefined ProductCategoryController",
+    "stack": "Error: No matching bindings found for serviceIdentifier: ProductCategoryControllerundefinedRegistered bindings:undefined ProductCategoryControllerundefined    at _validateActiveBindingCount (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:170:15)undefined    at _getActiveBindings (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:108:3)undefined    at _createSubRequests (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:205:22)undefined    at plan (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:339:5)undefined    at <anonymous> (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1084:45)undefined    at Container._get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1006:37)undefined    at Container._getButThrowIfAsync (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1010:60)undefined    at Container.get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:399:17)undefined    at ProductCategoryController_getById (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/src/routes.config/routes.ts:107:57)undefined    at Layer.handle [as handle_request] (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/express/lib/router/layer.js:95:5)"
+   }
+  }
+ }
+}
+{
+ "level": "error",
+ "logId": "6d94534e05fae0332407835bf0e9d13b",
+ "timestamp": "2025-02-02T06:09:24.072Z",
+ "appInfo": {
+  "processId": 99240
+ },
+ "message": "No matching bindings found for serviceIdentifier: ProductCategoryController\nRegistered bindings:\n ProductCategoryController",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "18"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories",
+   "method": "POST",
+   "body": {
+    "name": "Bebidas"
+   },
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "text/html; charset=utf-8",
+    "content-length": "123",
+    "etag": "W/\"7b-okueKVEQ0Ge3DlhG/N2z/wWoWuw\""
+   },
+   "statusCode": 500,
+   "requestDuration": "0.003s",
+   "clienteDesistiu": false,
+   "error": {
+    "message": "No matching bindings found for serviceIdentifier: ProductCategoryControllerundefinedRegistered bindings:undefined ProductCategoryController",
+    "stack": "Error: No matching bindings found for serviceIdentifier: ProductCategoryControllerundefinedRegistered bindings:undefined ProductCategoryControllerundefined    at _validateActiveBindingCount (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:170:15)undefined    at _getActiveBindings (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:108:3)undefined    at _createSubRequests (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:205:22)undefined    at plan (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:339:5)undefined    at <anonymous> (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1084:45)undefined    at Container._get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1006:37)undefined    at Container._getButThrowIfAsync (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1010:60)undefined    at Container.get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:399:17)undefined    at ProductCategoryController_create (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/src/routes.config/routes.ts:72:57)undefined    at Layer.handle [as handle_request] (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/express/lib/router/layer.js:95:5)"
+   }
+  }
+ }
+}
+{
+ "level": "error",
+ "logId": "c165baa40cefc5b43b3f4d48a31e0675",
+ "timestamp": "2025-02-02T06:09:24.085Z",
+ "appInfo": {
+  "processId": 99240
+ },
+ "message": "No matching bindings found for serviceIdentifier: ProductCategoryController\nRegistered bindings:\n ProductCategoryController",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories/undefined",
+   "method": "GET",
+   "body": {},
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "text/html; charset=utf-8",
+    "content-length": "123",
+    "etag": "W/\"7b-okueKVEQ0Ge3DlhG/N2z/wWoWuw\""
+   },
+   "statusCode": 500,
+   "requestDuration": "0.001s",
+   "clienteDesistiu": false,
+   "error": {
+    "message": "No matching bindings found for serviceIdentifier: ProductCategoryControllerundefinedRegistered bindings:undefined ProductCategoryController",
+    "stack": "Error: No matching bindings found for serviceIdentifier: ProductCategoryControllerundefinedRegistered bindings:undefined ProductCategoryControllerundefined    at _validateActiveBindingCount (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:170:15)undefined    at _getActiveBindings (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:108:3)undefined    at _createSubRequests (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:205:22)undefined    at plan (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:339:5)undefined    at <anonymous> (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1084:45)undefined    at Container._get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1006:37)undefined    at Container._getButThrowIfAsync (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1010:60)undefined    at Container.get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:399:17)undefined    at ProductCategoryController_getById (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/src/routes.config/routes.ts:107:57)undefined    at Layer.handle [as handle_request] (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/express/lib/router/layer.js:95:5)"
+   }
+  }
+ }
+}
+{
+ "level": "error",
+ "logId": "086cafef5f1afd042665ecd42fc64830",
+ "timestamp": "2025-02-02T06:09:24.090Z",
+ "appInfo": {
+  "processId": 99240
+ },
+ "message": "No matching bindings found for serviceIdentifier: ProductCategoryController\nRegistered bindings:\n ProductCategoryController",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories/01JK2MEBKQ2PCZ96SEAVHGK80H",
+   "method": "GET",
+   "body": {},
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "text/html; charset=utf-8",
+    "content-length": "123",
+    "etag": "W/\"7b-okueKVEQ0Ge3DlhG/N2z/wWoWuw\""
+   },
+   "statusCode": 500,
+   "requestDuration": "0.001s",
+   "clienteDesistiu": false,
+   "error": {
+    "message": "No matching bindings found for serviceIdentifier: ProductCategoryControllerundefinedRegistered bindings:undefined ProductCategoryController",
+    "stack": "Error: No matching bindings found for serviceIdentifier: ProductCategoryControllerundefinedRegistered bindings:undefined ProductCategoryControllerundefined    at _validateActiveBindingCount (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:170:15)undefined    at _getActiveBindings (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:108:3)undefined    at _createSubRequests (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:205:22)undefined    at plan (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:339:5)undefined    at <anonymous> (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1084:45)undefined    at Container._get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1006:37)undefined    at Container._getButThrowIfAsync (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1010:60)undefined    at Container.get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:399:17)undefined    at ProductCategoryController_getById (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/src/routes.config/routes.ts:107:57)undefined    at Layer.handle [as handle_request] (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/express/lib/router/layer.js:95:5)"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "5b4b14cc1996526679fa65bee0ca36fe",
+ "timestamp": "2025-02-02T06:12:31.008Z",
+ "appInfo": {
+  "processId": 102097
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "18"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories",
+   "method": "POST",
+   "body": {
+    "name": "Bebidas"
+   },
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "110",
+    "etag": "W/\"6e-8HXXDjAAq4xxNXkbWhlcuvo5ReU\""
+   },
+   "statusCode": 201,
+   "requestDuration": "0.113s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK2MM21J9JQGMWEJSJR07B85",
+    "name": "Bebidas",
+    "_productsCount": 0,
+    "createdAt": "2025-02-02T06:12:30.898Z"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "997e17fcd394701792e49ddea7029b83",
+ "timestamp": "2025-02-02T06:12:31.032Z",
+ "appInfo": {
+  "processId": 102097
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories/01JK2MM21J9JQGMWEJSJR07B85",
+   "method": "GET",
+   "body": {},
+   "params": {
+    "id": "01JK2MM21J9JQGMWEJSJR07B85"
+   },
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "110",
+    "etag": "W/\"6e-8HXXDjAAq4xxNXkbWhlcuvo5ReU\""
+   },
+   "statusCode": 200,
+   "requestDuration": "0.006s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK2MM21J9JQGMWEJSJR07B85",
+    "name": "Bebidas",
+    "_productsCount": 0,
+    "createdAt": "2025-02-02T06:12:30.898Z"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "8b1ef9042a727366a73dd90ad28194dc",
+ "timestamp": "2025-02-02T06:12:31.041Z",
+ "appInfo": {
+  "processId": 102097
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories/01JK2MM25T7349NZR2AQ2XQCWF",
+   "method": "GET",
+   "body": {},
+   "params": {
+    "id": "01JK2MM25T7349NZR2AQ2XQCWF"
+   },
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*"
+   },
+   "statusCode": 204,
+   "requestDuration": "0.004s",
+   "clienteDesistiu": false
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "cf2457553e101509492fe22a560d2ee7",
+ "timestamp": "2025-02-02T21:38:41.370Z",
+ "appInfo": {
+  "processId": 11856
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "18"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories",
+   "method": "POST",
+   "body": {
+    "name": "Bebidas"
+   },
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "110",
+    "etag": "W/\"6e-ZL2VEQu1WB9yIgo6hdRjRZvYVKI\""
+   },
+   "statusCode": 201,
+   "requestDuration": "0.086s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK49KY06KKNKY9H6543DMWHB",
+    "name": "Bebidas",
+    "_productsCount": 0,
+    "createdAt": "2025-02-02T21:38:41.287Z"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "daadcc4e6c1d8218d08f5967e0eeb2e4",
+ "timestamp": "2025-02-02T21:38:41.394Z",
+ "appInfo": {
+  "processId": 11856
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories/01JK49KY06KKNKY9H6543DMWHB",
+   "method": "GET",
+   "body": {},
+   "params": {
+    "id": "01JK49KY06KKNKY9H6543DMWHB"
+   },
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "110",
+    "etag": "W/\"6e-ZL2VEQu1WB9yIgo6hdRjRZvYVKI\""
+   },
+   "statusCode": 200,
+   "requestDuration": "0.005s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK49KY06KKNKY9H6543DMWHB",
+    "name": "Bebidas",
+    "_productsCount": 0,
+    "createdAt": "2025-02-02T21:38:41.287Z"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "247e084582531176a4d2e6c3f26a450a",
+ "timestamp": "2025-02-02T21:38:41.402Z",
+ "appInfo": {
+  "processId": 11856
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories/01JK49KY3M2243BCY7FZEF0MMN",
+   "method": "GET",
+   "body": {},
+   "params": {
+    "id": "01JK49KY3M2243BCY7FZEF0MMN"
+   },
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*"
+   },
+   "statusCode": 204,
+   "requestDuration": "0.003s",
+   "clienteDesistiu": false
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "2e62cb3a3444e227eaffdeef3ecb2699",
+ "timestamp": "2025-02-02T21:41:23.527Z",
+ "appInfo": {
+  "processId": 12927
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "18"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories",
+   "method": "POST",
+   "body": {
+    "name": "Bebidas"
+   },
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "110",
+    "etag": "W/\"6e-RnrV7as7obICdu0nJqBOzPmImrs\""
+   },
+   "statusCode": 201,
+   "requestDuration": "0.059s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK49RWCEAWN6BX9PJ1EBN86E",
+    "name": "Bebidas",
+    "_productsCount": 0,
+    "createdAt": "2025-02-02T21:41:23.471Z"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "4540312774d6321b5c6f5e0f44f0cc5a",
+ "timestamp": "2025-02-02T21:41:23.547Z",
+ "appInfo": {
+  "processId": 12927
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories/01JK49RWCEAWN6BX9PJ1EBN86E",
+   "method": "GET",
+   "body": {},
+   "params": {
+    "id": "01JK49RWCEAWN6BX9PJ1EBN86E"
+   },
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "110",
+    "etag": "W/\"6e-RnrV7as7obICdu0nJqBOzPmImrs\""
+   },
+   "statusCode": 200,
+   "requestDuration": "0.004s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK49RWCEAWN6BX9PJ1EBN86E",
+    "name": "Bebidas",
+    "_productsCount": 0,
+    "createdAt": "2025-02-02T21:41:23.471Z"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "7ba10b1c1e1a81905fdb61095e15afc3",
+ "timestamp": "2025-02-02T21:41:23.556Z",
+ "appInfo": {
+  "processId": 12927
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories/01JK49RWEZB35NMKN6VE6RHTQ5",
+   "method": "GET",
+   "body": {},
+   "params": {
+    "id": "01JK49RWEZB35NMKN6VE6RHTQ5"
+   },
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*"
+   },
+   "statusCode": 204,
+   "requestDuration": "0.002s",
+   "clienteDesistiu": false
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "5073b93a8c34a75779fe033a2e7d080d",
+ "timestamp": "2025-02-02T21:42:49.881Z",
+ "appInfo": {
+  "processId": 13741
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "18"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories",
+   "method": "POST",
+   "body": {
+    "name": "Bebidas"
+   },
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "110",
+    "etag": "W/\"6e-LoNZ7xSxcTNXUGGw/aTciBBgR2c\""
+   },
+   "statusCode": 201,
+   "requestDuration": "0.061s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK49VGPYK6RZZWEZC6JEGJM2",
+    "name": "Bebidas",
+    "_productsCount": 0,
+    "createdAt": "2025-02-02T21:42:49.822Z"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "4f250a9648824b9e8e61ecdb8173912b",
+ "timestamp": "2025-02-02T21:42:49.901Z",
+ "appInfo": {
+  "processId": 13741
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories/01JK49VGPYK6RZZWEZC6JEGJM2",
+   "method": "GET",
+   "body": {},
+   "params": {
+    "id": "01JK49VGPYK6RZZWEZC6JEGJM2"
+   },
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "110",
+    "etag": "W/\"6e-LoNZ7xSxcTNXUGGw/aTciBBgR2c\""
+   },
+   "statusCode": 200,
+   "requestDuration": "0.006s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK49VGPYK6RZZWEZC6JEGJM2",
+    "name": "Bebidas",
+    "_productsCount": 0,
+    "createdAt": "2025-02-02T21:42:49.822Z"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "72c810ac1296780048180f6cd2a8924e",
+ "timestamp": "2025-02-02T21:42:49.907Z",
+ "appInfo": {
+  "processId": 13741
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories/01JK49VGSFJNKG13A4J7RR6C62",
+   "method": "GET",
+   "body": {},
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "34",
+    "etag": "W/\"22-qLtbZ0fBLH9liil8qM1e+yBt0sQ\""
+   },
+   "statusCode": 404,
+   "requestDuration": "0.002s",
+   "clienteDesistiu": false,
+   "body": {
+    "message": "Resource not founded"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "ded73f2f24dfb6540e9bedcc03815a73",
+ "timestamp": "2025-02-02T21:44:26.122Z",
+ "appInfo": {
+  "processId": 13741
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "18"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories",
+   "method": "POST",
+   "body": {
+    "name": "Bebidas"
+   },
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "110",
+    "etag": "W/\"6e-GS+ZvAnsDp4OLbvGNiCeESivLXM\""
+   },
+   "statusCode": 201,
+   "requestDuration": "0.007s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK49YER3TTCJPXXNQGMA1B9H",
+    "name": "Bebidas",
+    "_productsCount": 0,
+    "createdAt": "2025-02-02T21:44:26.115Z"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "7a3f473d437750f0eca1a39b1869ab88",
+ "timestamp": "2025-02-02T21:44:26.140Z",
+ "appInfo": {
+  "processId": 13741
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories/01JK49YER3TTCJPXXNQGMA1B9H",
+   "method": "GET",
+   "body": {},
+   "params": {
+    "id": "01JK49YER3TTCJPXXNQGMA1B9H"
+   },
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "110",
+    "etag": "W/\"6e-GS+ZvAnsDp4OLbvGNiCeESivLXM\""
+   },
+   "statusCode": 200,
+   "requestDuration": "0.003s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK49YER3TTCJPXXNQGMA1B9H",
+    "name": "Bebidas",
+    "_productsCount": 0,
+    "createdAt": "2025-02-02T21:44:26.115Z"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "2ccff483fe8b0d0f0d876627f37ddc6e",
+ "timestamp": "2025-02-02T21:44:26.147Z",
+ "appInfo": {
+  "processId": 13741
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories/01JK49YERZTW221JQJ9HH9DJ6A",
+   "method": "GET",
+   "body": {},
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "34",
+    "etag": "W/\"22-qLtbZ0fBLH9liil8qM1e+yBt0sQ\""
+   },
+   "statusCode": 404,
+   "requestDuration": "0.003s",
+   "clienteDesistiu": false,
+   "body": {
+    "message": "Resource not founded"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "1e85e2f769db3fc93d7c5ed6f340a625",
+ "timestamp": "2025-02-03T02:26:37.048Z",
+ "appInfo": {
+  "processId": 61411
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "19"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories",
+   "method": "POST",
+   "body": {
+    "name": "Kalzones"
+   },
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "111",
+    "etag": "W/\"6f-1byxmL+skG6FDmLXLzgQb0y7lgA\""
+   },
+   "statusCode": 201,
+   "requestDuration": "0.107s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK4T34RGA5279TKDGC3YFYPC",
+    "name": "Kalzones",
+    "_productsCount": 0,
+    "createdAt": "2025-02-03T02:26:36.945Z"
+   }
+  }
+ }
+}
+{
+ "level": "error",
+ "logId": "5952894331cf0bd437e304b9ae58b0fc",
+ "timestamp": "2025-02-03T02:26:37.079Z",
+ "appInfo": {
+  "processId": 61411
+ },
+ "message": "No matching bindings found for serviceIdentifier: ProductController\nRegistered bindings:\n ProductController",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "204"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/products",
+   "method": "POST",
+   "body": {
+    "name": "Mussarela",
+    "categoryId": "01JK4T34RGA5279TKDGC3YFYPC",
+    "sizes": [
+     1
+    ],
+    "createdBy": "",
+    "currentPrice": 46,
+    "description": "Pizza clássica",
+    "imageUrl": "https://localhost:3445/image.png",
+    "recordStatusId": 1
+   },
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "text/html; charset=utf-8",
+    "content-length": "107",
+    "etag": "W/\"6b-m8pG9O4+4UMgRgrjJO49o31sc+k\""
+   },
+   "statusCode": 500,
+   "requestDuration": "0.002s",
+   "clienteDesistiu": false,
+   "error": {
+    "message": "No matching bindings found for serviceIdentifier: ProductControllerundefinedRegistered bindings:undefined ProductController",
+    "stack": "Error: No matching bindings found for serviceIdentifier: ProductControllerundefinedRegistered bindings:undefined ProductControllerundefined    at _validateActiveBindingCount (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:170:15)undefined    at _getActiveBindings (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:108:3)undefined    at _createSubRequests (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:205:22)undefined    at plan (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:339:5)undefined    at <anonymous> (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1084:45)undefined    at Container._get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1006:37)undefined    at Container._getButThrowIfAsync (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1010:60)undefined    at Container.get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:399:17)undefined    at ProductController_create (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/src/routes.config/routes.ts:178:57)undefined    at Layer.handle [as handle_request] (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/express/lib/router/layer.js:95:5)"
+   }
+  }
+ }
+}
+{
+ "level": "error",
+ "logId": "ef7d50057f2cce132c86ceab1e816c34",
+ "timestamp": "2025-02-03T02:26:37.084Z",
+ "appInfo": {
+  "processId": 61411
+ },
+ "message": "No matching bindings found for serviceIdentifier: ProductController\nRegistered bindings:\n ProductController",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/products/undefined",
+   "method": "GET",
+   "body": {},
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "text/html; charset=utf-8",
+    "content-length": "107",
+    "etag": "W/\"6b-m8pG9O4+4UMgRgrjJO49o31sc+k\""
+   },
+   "statusCode": 500,
+   "requestDuration": "0.002s",
+   "clienteDesistiu": false,
+   "error": {
+    "message": "No matching bindings found for serviceIdentifier: ProductControllerundefinedRegistered bindings:undefined ProductController",
+    "stack": "Error: No matching bindings found for serviceIdentifier: ProductControllerundefinedRegistered bindings:undefined ProductControllerundefined    at _validateActiveBindingCount (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:170:15)undefined    at _getActiveBindings (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:108:3)undefined    at _createSubRequests (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:205:22)undefined    at plan (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:339:5)undefined    at <anonymous> (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1084:45)undefined    at Container._get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1006:37)undefined    at Container._getButThrowIfAsync (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1010:60)undefined    at Container.get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:399:17)undefined    at ProductController_getById (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/src/routes.config/routes.ts:248:57)undefined    at Layer.handle [as handle_request] (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/express/lib/router/layer.js:95:5)"
+   }
+  }
+ }
+}
+{
+ "level": "error",
+ "logId": "87f248980bdffdc86072aee9811694be",
+ "timestamp": "2025-02-03T02:26:37.091Z",
+ "appInfo": {
+  "processId": 61411
+ },
+ "message": "No matching bindings found for serviceIdentifier: ProductController\nRegistered bindings:\n ProductController",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/products/01JK4T34WYBW2406AMCNY2WY9T",
+   "method": "GET",
+   "body": {},
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "text/html; charset=utf-8",
+    "content-length": "107",
+    "etag": "W/\"6b-m8pG9O4+4UMgRgrjJO49o31sc+k\""
+   },
+   "statusCode": 500,
+   "requestDuration": "0.001s",
+   "clienteDesistiu": false,
+   "error": {
+    "message": "No matching bindings found for serviceIdentifier: ProductControllerundefinedRegistered bindings:undefined ProductController",
+    "stack": "Error: No matching bindings found for serviceIdentifier: ProductControllerundefinedRegistered bindings:undefined ProductControllerundefined    at _validateActiveBindingCount (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:170:15)undefined    at _getActiveBindings (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:108:3)undefined    at _createSubRequests (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:205:22)undefined    at plan (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/planning/planner.ts:339:5)undefined    at <anonymous> (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1084:45)undefined    at Container._get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1006:37)undefined    at Container._getButThrowIfAsync (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:1010:60)undefined    at Container.get (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/inversify/src/container/container.ts:399:17)undefined    at ProductController_getById (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/src/routes.config/routes.ts:248:57)undefined    at Layer.handle [as handle_request] (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/express/lib/router/layer.js:95:5)"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "9cd6ac5132f5ed9bd98b59752a30bc0b",
+ "timestamp": "2025-02-03T02:27:43.925Z",
+ "appInfo": {
+  "processId": 62431
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "19"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories",
+   "method": "POST",
+   "body": {
+    "name": "Kalzones"
+   },
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "111",
+    "etag": "W/\"6f-ctQO8ptCscWe6ycN2eGCB9zBS+k\""
+   },
+   "statusCode": 201,
+   "requestDuration": "0.063s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK4T563RTCWKEP4WK9VBPKYX",
+    "name": "Kalzones",
+    "_productsCount": 0,
+    "createdAt": "2025-02-03T02:27:43.865Z"
+   }
+  }
+ }
+}
+{
+ "level": "error",
+ "logId": "64c91eea93de2cbbe1221d18203063c1",
+ "timestamp": "2025-02-03T02:27:43.949Z",
+ "appInfo": {
+  "processId": 62431
+ },
+ "message": "[\n  {\n    \"code\": \"too_small\",\n    \"minimum\": 26,\n    \"type\": \"string\",\n    \"inclusive\": true,\n    \"exact\": true,\n    \"message\": \"String must contain exactly 26 character(s)\",\n    \"path\": [\n      \"createdBy\"\n    ]\n  }\n]",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "204"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/products",
+   "method": "POST",
+   "body": {
+    "name": "Mussarela",
+    "categoryId": "01JK4T563RTCWKEP4WK9VBPKYX",
+    "sizes": [
+     1
+    ],
+    "createdBy": "",
+    "currentPrice": 46,
+    "description": "Pizza clássica",
+    "imageUrl": "https://localhost:3445/image.png",
+    "recordStatusId": 1
+   },
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "text/html; charset=utf-8",
+    "content-length": "219",
+    "etag": "W/\"db-mwZV4XP0sYZNuPQtxzoaluwkg7w\""
+   },
+   "statusCode": 500,
+   "requestDuration": "0.003s",
+   "clienteDesistiu": false,
+   "error": {
+    "message": "[undefined  {undefined    \"code\": \"too_small\",undefined    \"minimum\": 26,undefined    \"type\": \"string\",undefined    \"inclusive\": true,undefined    \"exact\": true,undefined    \"message\": \"String must contain exactly 26 character(s)\",undefined    \"path\": [undefined      \"createdBy\"undefined    ]undefined  }undefined]",
+    "stack": "ZodError: [undefined  {undefined    \"code\": \"too_small\",undefined    \"minimum\": 26,undefined    \"type\": \"string\",undefined    \"inclusive\": true,undefined    \"exact\": true,undefined    \"message\": \"String must contain exactly 26 character(s)\",undefined    \"path\": [undefined      \"createdBy\"undefined    ]undefined  }undefined]undefined    at get error [as error] (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/zod/lib/types.js:55:31)undefined    at ZodObject.parse (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/zod/lib/types.js:131:22)undefined    at ProductController.create (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/src/api/product/product.controller.ts:19:52)undefined    at ExpressTemplateService.buildPromise (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/@tsoa/runtime/src/routeGeneration/templates/templateService.ts:29:69)undefined    at ExpressTemplateService.apiHandler (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/@tsoa/runtime/src/routeGeneration/templates/express/expressTemplateService.ts:37:31)undefined    at ProductController_create (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/src/routes.config/routes.ts:183:37)undefined    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+   }
+  }
+ }
+}
+{
+ "level": "error",
+ "logId": "d68c8cab41694e56570cc99d8922335d",
+ "timestamp": "2025-02-03T02:27:43.953Z",
+ "appInfo": {
+  "processId": 62431
+ },
+ "message": "[\n  {\n    \"code\": \"too_small\",\n    \"minimum\": 26,\n    \"type\": \"string\",\n    \"inclusive\": true,\n    \"exact\": true,\n    \"message\": \"String must contain exactly 26 character(s)\",\n    \"path\": []\n  }\n]",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/products/undefined",
+   "method": "GET",
+   "body": {},
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "text/html; charset=utf-8",
+    "content-length": "196",
+    "etag": "W/\"c4-MFq+32iDmS2UdyJ4eVTi9VbMgKQ\""
+   },
+   "statusCode": 500,
+   "requestDuration": "0.002s",
+   "clienteDesistiu": false,
+   "error": {
+    "message": "[undefined  {undefined    \"code\": \"too_small\",undefined    \"minimum\": 26,undefined    \"type\": \"string\",undefined    \"inclusive\": true,undefined    \"exact\": true,undefined    \"message\": \"String must contain exactly 26 character(s)\",undefined    \"path\": []undefined  }undefined]",
+    "stack": "ZodError: [undefined  {undefined    \"code\": \"too_small\",undefined    \"minimum\": 26,undefined    \"type\": \"string\",undefined    \"inclusive\": true,undefined    \"exact\": true,undefined    \"message\": \"String must contain exactly 26 character(s)\",undefined    \"path\": []undefined  }undefined]undefined    at get error [as error] (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/zod/lib/types.js:55:31)undefined    at ZodString.parse (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/zod/lib/types.js:131:22)undefined    at ProductController.getById (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/src/api/product/product.controller.ts:32:40)undefined    at ExpressTemplateService.buildPromise (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/@tsoa/runtime/src/routeGeneration/templates/templateService.ts:29:69)undefined    at ExpressTemplateService.apiHandler (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/node_modules/@tsoa/runtime/src/routeGeneration/templates/express/expressTemplateService.ts:37:31)undefined    at ProductController_getById (/home/david/documents/node-projects/nodejs-mono-repo/pizzaria-app/src/routes.config/routes.ts:253:37)"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "e6411b3cc3f82d9147a8359117aa3aab",
+ "timestamp": "2025-02-03T02:27:43.968Z",
+ "appInfo": {
+  "processId": 62431
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/products/01JK4T566MPY4WFM18XJ9K2HKE",
+   "method": "GET",
+   "body": {},
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "34",
+    "etag": "W/\"22-qLtbZ0fBLH9liil8qM1e+yBt0sQ\""
+   },
+   "statusCode": 404,
+   "requestDuration": "0.01s",
+   "clienteDesistiu": false,
+   "body": {
+    "message": "Resource not founded"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "7a47dc2644c1ddf40b00877d16b5693e",
+ "timestamp": "2025-02-03T02:30:21.093Z",
+ "appInfo": {
+  "processId": 63508
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "19"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories",
+   "method": "POST",
+   "body": {
+    "name": "Kalzones"
+   },
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "111",
+    "etag": "W/\"6f-pDT2o2n7JRqf2Khkfpamd8kEfzU\""
+   },
+   "statusCode": 201,
+   "requestDuration": "0.06s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK4T9ZKDZGWKZHZMS61GK0GA",
+    "name": "Kalzones",
+    "_productsCount": 0,
+    "createdAt": "2025-02-03T02:30:21.038Z"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "c751fe4fc2b6cd13fc97554aa16b5124",
+ "timestamp": "2025-02-03T02:30:21.130Z",
+ "appInfo": {
+  "processId": 63508
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "230"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/products",
+   "method": "POST",
+   "body": {
+    "name": "Mussarela",
+    "categoryId": "01JK4T9ZKDZGWKZHZMS61GK0GA",
+    "sizes": [
+     1
+    ],
+    "createdBy": "01JK4T9ZJ0SJJX0WP62DZV7J17",
+    "currentPrice": 46,
+    "description": "Pizza clássica",
+    "imageUrl": "https://localhost:3445/image.png",
+    "recordStatusId": 1
+   },
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "335",
+    "etag": "W/\"14f-aGYXHBxPnjuz1sMM8HTeHjvd+34\""
+   },
+   "statusCode": 201,
+   "requestDuration": "0.017s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK4T9ZNTFSTS7B5BRH066KQ1",
+    "categoryId": "01JK4T9ZKDZGWKZHZMS61GK0GA",
+    "name": "Mussarela",
+    "imageUrl": "https://localhost:3445/image.png",
+    "description": "Pizza clássica",
+    "currentPrice": 46,
+    "recordStatusId": 1,
+    "sizes": [
+     1
+    ],
+    "createdBy": "01JK4T9ZJ0SJJX0WP62DZV7J17",
+    "createdAt": "2025-02-03T02:30:21.114Z",
+    "editedAt": null,
+    "editedBy": null
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "5bcf060e7588dd9d389d20c8bced8481",
+ "timestamp": "2025-02-03T02:30:21.140Z",
+ "appInfo": {
+  "processId": 63508
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/products/01JK4T9ZNTFSTS7B5BRH066KQ1",
+   "method": "GET",
+   "body": {},
+   "params": {
+    "id": "01JK4T9ZNTFSTS7B5BRH066KQ1"
+   },
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "335",
+    "etag": "W/\"14f-aGYXHBxPnjuz1sMM8HTeHjvd+34\""
+   },
+   "statusCode": 200,
+   "requestDuration": "0.005s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK4T9ZNTFSTS7B5BRH066KQ1",
+    "categoryId": "01JK4T9ZKDZGWKZHZMS61GK0GA",
+    "name": "Mussarela",
+    "imageUrl": "https://localhost:3445/image.png",
+    "description": "Pizza clássica",
+    "currentPrice": 46,
+    "recordStatusId": 1,
+    "sizes": [
+     1
+    ],
+    "createdBy": "01JK4T9ZJ0SJJX0WP62DZV7J17",
+    "createdAt": "2025-02-03T02:30:21.114Z",
+    "editedAt": null,
+    "editedBy": null
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "f193659d2a1942a536a8599883d3ef8d",
+ "timestamp": "2025-02-03T02:30:21.152Z",
+ "appInfo": {
+  "processId": 63508
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/products/01JK4T9ZPTZMRWQDT3FDMEDD6M",
+   "method": "GET",
+   "body": {},
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "34",
+    "etag": "W/\"22-qLtbZ0fBLH9liil8qM1e+yBt0sQ\""
+   },
+   "statusCode": 404,
+   "requestDuration": "0.004s",
+   "clienteDesistiu": false,
+   "body": {
+    "message": "Resource not founded"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "19984da8b9d389b91b802e9e832fd74d",
+ "timestamp": "2025-02-03T02:30:43.572Z",
+ "appInfo": {
+  "processId": 63508
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "19"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories",
+   "method": "POST",
+   "body": {
+    "name": "Kalzones"
+   },
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "111",
+    "etag": "W/\"6f-2bh2hZGdChWKiDyjvgRmXgramrM\""
+   },
+   "statusCode": 201,
+   "requestDuration": "0.005s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK4TANKFRVY4FEAYCVRG441X",
+    "name": "Kalzones",
+    "_productsCount": 0,
+    "createdAt": "2025-02-03T02:30:43.568Z"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "45a7067b7b5fbdff939002c4866b515e",
+ "timestamp": "2025-02-03T02:30:43.596Z",
+ "appInfo": {
+  "processId": 63508
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "230"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/products",
+   "method": "POST",
+   "body": {
+    "name": "Mussarela",
+    "categoryId": "01JK4TANKFRVY4FEAYCVRG441X",
+    "sizes": [
+     1
+    ],
+    "createdBy": "01JK4TANJFS9QS2Q5D1YYYSCMV",
+    "currentPrice": 46,
+    "description": "Pizza clássica",
+    "imageUrl": "https://localhost:3445/image.png",
+    "recordStatusId": 1
+   },
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "335",
+    "etag": "W/\"14f-XkjdSI3wCZ2F3NKAa9Dl0l5rV4A\""
+   },
+   "statusCode": 201,
+   "requestDuration": "0.005s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK4TANM7D5ZG77CEEX0P7M89",
+    "categoryId": "01JK4TANKFRVY4FEAYCVRG441X",
+    "name": "Mussarela",
+    "imageUrl": "https://localhost:3445/image.png",
+    "description": "Pizza clássica",
+    "currentPrice": 46,
+    "recordStatusId": 1,
+    "sizes": [
+     1
+    ],
+    "createdBy": "01JK4TANJFS9QS2Q5D1YYYSCMV",
+    "createdAt": "2025-02-03T02:30:43.591Z",
+    "editedAt": null,
+    "editedBy": null
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "9d64a6c12d11d89148dd1a0aa5bfd107",
+ "timestamp": "2025-02-03T02:30:43.602Z",
+ "appInfo": {
+  "processId": 63508
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/products/01JK4TANM7D5ZG77CEEX0P7M89",
+   "method": "GET",
+   "body": {},
+   "params": {
+    "id": "01JK4TANM7D5ZG77CEEX0P7M89"
+   },
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "335",
+    "etag": "W/\"14f-XkjdSI3wCZ2F3NKAa9Dl0l5rV4A\""
+   },
+   "statusCode": 200,
+   "requestDuration": "0.003s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK4TANM7D5ZG77CEEX0P7M89",
+    "categoryId": "01JK4TANKFRVY4FEAYCVRG441X",
+    "name": "Mussarela",
+    "imageUrl": "https://localhost:3445/image.png",
+    "description": "Pizza clássica",
+    "currentPrice": 46,
+    "recordStatusId": 1,
+    "sizes": [
+     1
+    ],
+    "createdBy": "01JK4TANJFS9QS2Q5D1YYYSCMV",
+    "createdAt": "2025-02-03T02:30:43.591Z",
+    "editedAt": null,
+    "editedBy": null
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "73b088b162192e58b0e9386b5172eed3",
+ "timestamp": "2025-02-03T02:30:43.610Z",
+ "appInfo": {
+  "processId": 63508
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/products/01JK4TANMM2GRRB2AF8CMWR98W",
+   "method": "GET",
+   "body": {},
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "34",
+    "etag": "W/\"22-qLtbZ0fBLH9liil8qM1e+yBt0sQ\""
+   },
+   "statusCode": 404,
+   "requestDuration": "0.004s",
+   "clienteDesistiu": false,
+   "body": {
+    "message": "Resource not founded"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "54d1808cd54a28df54556635a1dd1ad6",
+ "timestamp": "2025-02-03T02:42:17.121Z",
+ "appInfo": {
+  "processId": 67873
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "18"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories",
+   "method": "POST",
+   "body": {
+    "name": "Bebidas"
+   },
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "110",
+    "etag": "W/\"6e-SYNHqGvDpomtHmvq5KIoiMrKLSo\""
+   },
+   "statusCode": 201,
+   "requestDuration": "0.116s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK4TZTSM8RSEYP45Z60DZYX9",
+    "name": "Bebidas",
+    "_productsCount": 0,
+    "createdAt": "2025-02-03T02:42:17.013Z"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "33306e047ea21880d0127506badef4d3",
+ "timestamp": "2025-02-03T02:42:17.123Z",
+ "appInfo": {
+  "processId": 67873
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "19"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories",
+   "method": "POST",
+   "body": {
+    "name": "Kalzones"
+   },
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "111",
+    "etag": "W/\"6f-o8FSUvMWWeoSi0OFRCasA66uEpc\""
+   },
+   "statusCode": 201,
+   "requestDuration": "0.106s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK4TZTST2EARSHMHX8QV16A3",
+    "name": "Kalzones",
+    "_productsCount": 0,
+    "createdAt": "2025-02-03T02:42:17.018Z"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "d74a66a698d454710a176d013e5b31f4",
+ "timestamp": "2025-02-03T02:42:17.149Z",
+ "appInfo": {
+  "processId": 67873
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories/01JK4TZTSM8RSEYP45Z60DZYX9",
+   "method": "GET",
+   "body": {},
+   "params": {
+    "id": "01JK4TZTSM8RSEYP45Z60DZYX9"
+   },
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "110",
+    "etag": "W/\"6e-SYNHqGvDpomtHmvq5KIoiMrKLSo\""
+   },
+   "statusCode": 200,
+   "requestDuration": "0.009s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK4TZTSM8RSEYP45Z60DZYX9",
+    "name": "Bebidas",
+    "_productsCount": 0,
+    "createdAt": "2025-02-03T02:42:17.013Z"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "57b93c2a59dacea5c7dc6d431ce91622",
+ "timestamp": "2025-02-03T02:42:17.158Z",
+ "appInfo": {
+  "processId": 67873
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "230"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/products",
+   "method": "POST",
+   "body": {
+    "name": "Mussarela",
+    "categoryId": "01JK4TZTST2EARSHMHX8QV16A3",
+    "sizes": [
+     1
+    ],
+    "createdBy": "01JK4TZTQJQSRNCB59919ZFABG",
+    "currentPrice": 46,
+    "description": "Pizza clássica",
+    "imageUrl": "https://localhost:3445/image.png",
+    "recordStatusId": 1
+   },
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "335",
+    "etag": "W/\"14f-UXwEF4urKwqkaGoeHwFq6Ag+K2g\""
+   },
+   "statusCode": 201,
+   "requestDuration": "0.013s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK4TZTXTNK35262Q3Q01TFG9",
+    "categoryId": "01JK4TZTST2EARSHMHX8QV16A3",
+    "name": "Mussarela",
+    "imageUrl": "https://localhost:3445/image.png",
+    "description": "Pizza clássica",
+    "currentPrice": 46,
+    "recordStatusId": 1,
+    "sizes": [
+     1
+    ],
+    "createdBy": "01JK4TZTQJQSRNCB59919ZFABG",
+    "createdAt": "2025-02-03T02:42:17.146Z",
+    "editedAt": null,
+    "editedBy": null
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "bb91396552f5257c0884cd53e150ecd7",
+ "timestamp": "2025-02-03T02:42:17.159Z",
+ "appInfo": {
+  "processId": 67873
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/product-categories/01JK4TZTY0QNE5KBJBP3DNSM31",
+   "method": "GET",
+   "body": {},
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "34",
+    "etag": "W/\"22-qLtbZ0fBLH9liil8qM1e+yBt0sQ\""
+   },
+   "statusCode": 404,
+   "requestDuration": "0.005s",
+   "clienteDesistiu": false,
+   "body": {
+    "message": "Resource not founded"
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "ec9f1b792128e5b41596a4d804b86967",
+ "timestamp": "2025-02-03T02:42:17.168Z",
+ "appInfo": {
+  "processId": 67873
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/products/01JK4TZTXTNK35262Q3Q01TFG9",
+   "method": "GET",
+   "body": {},
+   "params": {
+    "id": "01JK4TZTXTNK35262Q3Q01TFG9"
+   },
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "335",
+    "etag": "W/\"14f-UXwEF4urKwqkaGoeHwFq6Ag+K2g\""
+   },
+   "statusCode": 200,
+   "requestDuration": "0.004s",
+   "clienteDesistiu": false,
+   "body": {
+    "id": "01JK4TZTXTNK35262Q3Q01TFG9",
+    "categoryId": "01JK4TZTST2EARSHMHX8QV16A3",
+    "name": "Mussarela",
+    "imageUrl": "https://localhost:3445/image.png",
+    "description": "Pizza clássica",
+    "currentPrice": 46,
+    "recordStatusId": 1,
+    "sizes": [
+     1
+    ],
+    "createdBy": "01JK4TZTQJQSRNCB59919ZFABG",
+    "createdAt": "2025-02-03T02:42:17.146Z",
+    "editedAt": null,
+    "editedBy": null
+   }
+  }
+ }
+}
+{
+ "level": "info",
+ "logId": "3478e9d0b2efd11352ea59e93e91bf5e",
+ "timestamp": "2025-02-03T02:42:17.175Z",
+ "appInfo": {
+  "processId": 67873
+ },
+ "message": "Some Success message",
+ "data": {
+  "request": {
+   "headers": {
+    "host": "localhost:1445",
+    "connection": "keep-alive",
+    "accept": "*/*",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "node",
+    "accept-encoding": "gzip, deflate"
+   },
+   "host": "localhost:1445",
+   "baseUrl": "",
+   "url": "/products/01JK4TZTYJ09SSSWZJDYZJ0CFD",
+   "method": "GET",
+   "body": {},
+   "params": {},
+   "query": {},
+   "clientIp": "::ffff:127.0.0.1"
+  },
+  "response": {
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "34",
+    "etag": "W/\"22-qLtbZ0fBLH9liil8qM1e+yBt0sQ\""
+   },
+   "statusCode": 404,
+   "requestDuration": "0.003s",
+   "clienteDesistiu": false,
+   "body": {
+    "message": "Resource not founded"
+   }
+  }
+ }
+}
