@@ -1,5 +1,5 @@
 networks:
-  db-net:
+  food-hub-net:
     driver: bridge
 
 services:
@@ -7,6 +7,7 @@ services:
   pgsql:
     build: 
       context: .
+      dockerfile: docker/postgresql/Dockerfile
     container_name: "pgsql"
     environment:
       POSTGRES_USER: postgres
@@ -15,7 +16,7 @@ services:
     ports:
       - 5432:5432
     networks:
-      - db-net
+      - food-hub-net
 
   pg-admin:
     image: dpage/pgadmin4
@@ -30,4 +31,22 @@ services:
     links:
       - pgsql
     networks:
-      - db-net
+      - food-hub-net
+
+  web-api:
+    build: 
+      context: .
+      dockerfile: docker/node/Dockerfile
+    container_name: web-api
+    ports:
+      - 1445:1445
+    environment:
+      - HOST=localhost
+      - PORT=1445
+      - POSTGRES_URL=postgresql://postgres:1234@pgsql/pizzaria?schema=public
+    networks:
+      - food-hub-net
+    links:
+      - pgsql
+    depends_on:
+      - pgsql

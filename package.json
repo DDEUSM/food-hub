@@ -11,8 +11,8 @@
         "dev": "NODE_ENV=development tsx ./src/main.ts",
         "watch": "tsx --watch ./src/main.ts",
         "build": "esbuild ./src/main.ts --bundle --minify --sourcemap --platform=node --target=node20.11.1 --outdir=./dist/src/",
-        "test": "jest",
-        "update_prisma": "prisma db pull && prisma generate"
+        "test": "jest",        
+        "update_prisma": "prisma db pull && prisma generate"        
     },
     "keywords": [],
     "author": "daviddeusmesquita@gmail.com",

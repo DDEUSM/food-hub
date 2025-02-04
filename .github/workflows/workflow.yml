@@ -8,29 +8,27 @@ on:
 jobs: 
     runner-job: 
         runs-on: ubuntu-latest         
-        
+        env:
+          HOST: localhost
+          PORT: 1445
+          POSTGRES_URL: postgresql://postgres:1234@pgsql/pizzaria?schema=public
+
         steps:
           - name: Check out repository code
-            uses: actions/checkout@v4
-
-          - name: Get node.js image
-            uses: actions/setup-node@v2
-            with: 
-              node-version: 20.11.x
+            uses: actions/checkout@v4         
           
           - name: Up services with docker compose
             run: docker compose up -d
           
-          - name: Build the rest api
-            run: |
-              npm ci              
-              npm run update_prisma
-              npm run tsoa:process
-              npm run build
-          - name: Start the app
-            run: |
-              npm start
-              npm run test
+          - name: Wait while the system starts
+            run: sleep 4
+
+          - name: Run tests
+            run: docker exec web-api npm run test
+          
+          - name: Kill server process
+            run: docker compose down
+            
           - run: echo 'Finish pipeline!'
 
 
