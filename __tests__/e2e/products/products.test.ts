@@ -3,27 +3,7 @@ import { ProductCategoryCreate } from '../../../src/api/product-category/product
 import { ProductCategory } from '../../../src/api/product-category/productCategory.entity';
 import { ProductCreate } from '../../../src/api/product/product.dto';
 import { Product } from '../../../src/api/product/product.entity';
-
-const BASE_URL = `http://localhost:1445`; // Ajuste conforme necessário
-
-async function post<T>(path: string = '', product: T){
-    return await fetch(`${BASE_URL}${path}`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(product)
-    })
-}
-
-async function get(path: string = ''){
-    return await fetch(`${BASE_URL}${path}`);
-}
-
-const api = {
-    post,
-    get
-}
+import { api } from '../../utils/apiProvider';
 
 describe("Teste e2e no módulo Products", () => {
 

@@ -24,10 +24,7 @@ jobs:
             run: sleep 4
 
           - name: Run tests
-            run: docker exec web-api npm run test
-          
-          - name: Kill server process
-            run: docker compose down
+            run: docker exec web-api npm run test                
             
           - run: echo 'Finish pipeline!'
 

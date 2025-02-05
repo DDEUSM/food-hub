@@ -7,6 +7,75 @@
 		"requestBodies": {},
 		"responses": {},
 		"schemas": {
+			"UnitTypes": {
+				"enum": [
+					1,
+					2
+				],
+				"type": "number"
+			},
+			"Resource": {
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"quantity": {
+						"type": "number",
+						"format": "double"
+					},
+					"averageCostPerUnit": {
+						"type": "number",
+						"format": "double"
+					},
+					"unitId": {
+						"$ref": "#/components/schemas/UnitTypes"
+					},
+					"lastEntryAt": {
+						"type": "string",
+						"format": "date-time",
+						"nullable": true
+					}
+				},
+				"required": [
+					"id",
+					"name",
+					"quantity",
+					"averageCostPerUnit",
+					"unitId",
+					"lastEntryAt"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"ResourceCreate": {
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"quantity": {
+						"type": "number",
+						"format": "double"
+					},
+					"averageCostPerUnit": {
+						"type": "number",
+						"format": "double"
+					},
+					"unitId": {
+						"$ref": "#/components/schemas/UnitTypes"
+					}
+				},
+				"required": [
+					"name",
+					"quantity",
+					"averageCostPerUnit",
+					"unitId"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
 			"ProductCategory": {
 				"properties": {
 					"id": {
@@ -170,6 +239,63 @@
 		}
 	},
 	"paths": {
+		"/resources": {
+			"post": {
+				"operationId": "Create",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/Resource"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/ResourceCreate"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/resources/{id}": {
+			"get": {
+				"operationId": "GetById",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/Resource"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "id",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			}
+		},
 		"/product-categories": {
 			"post": {
 				"operationId": "Create",

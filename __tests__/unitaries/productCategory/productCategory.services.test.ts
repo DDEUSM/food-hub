@@ -2,7 +2,6 @@ import { ulid } from 'ulid';
 import { ProductCategoryCreate } from '../../../src/api/product-category/productCategory.dto';
 import { ProductCategoryService } from '../../../src/api/product-category/productCategory.services'
 import { ProductCategory } from '../../../src/api/product-category/productCategory.entity';
-import { IProductCategoryRespository } from '../../../src/api/product-category/productCategory.contract';
 import { ProductCategoryRepository } from '../../../src/api/product-category/productCategory.repository';
 
 describe("Teste unitário de ProductCategoryService", () => {
